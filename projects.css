@@ -1,0 +1,47 @@
+*{
+    font-family: Andale Mono, monospace;
+    color: white;
+}
+video{
+    width: auto; 
+    max-width: 50%;
+    margin: 10px 0px;
+}
+img{
+    width: auto; 
+    max-width: 50%;
+    margin: 10px 0px;
+}
+body{
+    background-image: linear-gradient(#207a65, #4e9680, #4e9680);
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: 100px auto;
+    grid-template-columns: auto;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-inner-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 30%;
+}
+.navbar-link{
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: none;
+}
+.projects-navbar-link{
+    background-color: #207a65;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.main-content{
+    padding: 0% 5%;
+}
+
