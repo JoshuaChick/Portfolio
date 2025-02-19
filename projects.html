@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>Joshua's Portfolio</title>
+    <link rel="stylesheet" href="projects.css">
+</head>    
+<body>
+    <div class="grid-container">
+        <div class="navbar">
+            <div class="navbar-inner-container">
+                <a class="navbar-link about-navbar-link" href="about.html">
+                    About
+                </a>
+                <a class="navbar-link projects-navbar-link" href="projects.html">
+                    Projects
+                </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <p>
+                Yolov8 With Stereo Depth:<br>
+                <br>
+                <img src="media/stereocam.jpg"><br>
+                <video controls>
+                    <source src="https://github.com/user-attachments/assets/f494a8e4-23da-49a2-88b2-7d7e281ef7df" type="video/mp4">
+                </video>
+                <br>
+                <br>
+                Designed for use with stereoscopic cameras. Yolov8 is used to detect objects in both cameras, then my algorithm pairs up bounding boxes of the same object and triangulates depth. Further details available <a target="_blank" href="https://github.com/JoshuaChick/Yolov8StereoDepth">here</a>.<br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                MemoryGain:<br>
+                <br>
+                <img src="media/memorygain.png"><br>
+                <br>
+                Flashcards app that uses machine learning to aid in the learning process. Application made with PyQt. To install and find further details click <a target="_blank" href="https://github.com/JoshuaChick/MemoryGain">here</a>.<br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                Voice Controlled Robot Arm:<br>
+                <br>
+                <img src="media/arm.jpg"><br>
+                <div class="embed-container">
+                    <iframe width="640" height="390" 
+                    src="https://www.youtube.com/embed/eNzwyMynCwU" 
+                    frameborder="0" allowfullscreen></iframe>
+                </div>
+                <br>
+                Designed, 3d printed, and wrote software for a robot arm controlled by natural language voice commands. It works as follows:
+                <ol>
+                    <li>OpenAI's Whisper model transcribes audio.</li>
+                    <li>User's voice command is passed to Microsoft's Phi LLM, which then decides whether or not to retrieve an item and, if so, what item to pick up.</li>
+                    <li>If the LLM confirmed the user wanted an item to be retrieved, hard-coded Python code uses visual data from the "Yolov8 With Stereo Depth" program and communicates with the Arduino board to guide the arm to pick up the object</li>
+                </ol>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
